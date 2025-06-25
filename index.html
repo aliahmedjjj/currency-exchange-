@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>محول العملات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>محول العملات</h1>
+    <div class="card">
+      <input type="number" id="amount" placeholder="أدخل المبلغ" />
+
+      <div class="row">
+        <select id="from">
+          <option value="USD">دولار أمريكي (USD)</option>
+          <option value="EUR">يورو (EUR)</option>
+          <option value="IQD">دينار عراقي (IQD)</option>
+          <option value="SAR">ريال سعودي (SAR)</option>
+          <option value="GBP">جنيه إسترليني (GBP)</option>
+        </select>
+
+        <span class="swap">⇄</span>
+
+        <select id="to">
+          <option value="IQD">دينار عراقي (IQD)</option>
+          <option value="USD">دولار أمريكي (USD)</option>
+          <option value="EUR">يورو (EUR)</option>
+          <option value="SAR">ريال سعودي (SAR)</option>
+          <option value="GBP">جنيه إسترليني (GBP)</option>
+        </select>
+      </div>
+
+      <button onclick="convertCurrency()">تحويل</button>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
